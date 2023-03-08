@@ -126,12 +126,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-STATIC_DIR = os.path.join(BASE_DIR, 'static')
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [
-    STATIC_DIR,
-]
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
@@ -161,5 +157,5 @@ REST_FRAMEWORK = {
 }
 
 
-CORS_ORIGIN_WHITELIST= ["http://localhost:3000",    "http://localhost:8000",    "http://127.0.0.1:8000",]
+CORS_ORIGIN_WHITELIST= ["http://localhost:3000",    "http://localhost:8000",    "http://127.0.0.1:8000","https://digimoncards.vercel.app/"]
 
